@@ -7,7 +7,7 @@ var hour = $(".hour")
 $("#currentDay").text(today.format("MMMM Do YYYY"));
 
 $(document).ready(function() {
-     
+     // this function colors the timeblocks depending on what time it is currently
     // (named the function fortuneTeller because it knows the past, present, and future)
     function fortuneTeller() {
         var currentHour = today.hour();
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 
 
-
+// this function allows what is typed in the text field to be remembered and remain when page refreshes
 function storageSave() {
     var value = $(this).prev().val()
     var key = $(this).prev().attr("data-hour")
