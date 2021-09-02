@@ -1,8 +1,6 @@
 var today = moment();
 var hour = $(".hour")
 
-
-
 // This grabs the date for the top of the screen
 $("#currentDay").text(today.format("MMMM Do YYYY"));
 
@@ -26,15 +24,8 @@ $(document).ready(function() {
             }
         })
     }
-
-
-
-
-
     fortuneTeller();
 });
-
-
 
 // this function allows what is typed in the text field to be remembered and remain when page refreshes
 function storageSave() {
